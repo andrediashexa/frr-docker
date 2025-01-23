@@ -1,0 +1,7 @@
+services:
+  frr:
+    build: .
+    restart: unless-stopped
+    env_file:
+      - .env
+    privileged: true
